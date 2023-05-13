@@ -23,7 +23,7 @@ const BookService = () => {
       price: price,
     };
 
-    console.log(booking);
+ //   console.log(booking);
 
     fetch("http://localhost:3000/bookings", {
       method: "POST",
@@ -34,7 +34,7 @@ const BookService = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
+     //   console.log(data);
         if (data.insertedId) {
           alert("service book successfully");
         }
